@@ -1,0 +1,115 @@
+/* ---- INIT ---- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --canicasCopper: #d58e69;
+    --canicasPurple: #27182d;
+    --font: 'Montserrat', sans-serif;
+    --inspect: dashed white 1px;
+}
+
+
+/* ---- MAIN CSS ---- */
+body {
+    height: auto;
+    font-family: var(--font);
+    background-color: var(--canicasPurple);
+    color: var(--canicasCopper);
+}
+main {
+    /* border: var(--inspect); */
+    max-width: 450px;
+    margin: auto;
+}
+#logo {
+    width: 250px;
+    margin: auto;
+}
+#logo > img {
+    width: 100%;
+}
+h2, #mmyy {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+#mmyy {
+    font-weight: 400;
+}
+hr {
+    margin: 20px auto;
+    width: 80%;
+    border-color:  var(--canicasCopper);
+}
+
+/* ---- PRODUCTS ---- */
+.product-wrapper {
+    /* border: var(--inspect); */
+    height: 250px;
+    margin: 0px 15px;
+    padding: 10px 0px;
+    border-bottom: solid var(--canicasCopper) 1px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.product-img {
+    height: 100%;
+    width: 90px;
+}
+.product-img > img {
+height: 100%;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+        text-transform: capitalize;
+}
+.product-description {
+    line-height: 22px;
+}
+.product-description > p {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.product-description> p > span {
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.prijs {
+    margin-top: 20px;
+}
+
+/* ---- INFORMATION ---- */
+#information-wrapper {
+    /* border: var(--inspect); */
+    margin: 20px;
+}
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+#information-wrapper > p {
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 22px;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 14px;
+}

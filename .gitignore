@@ -1,0 +1,7 @@
+
+*.sketch
+*.fig
+text-content.md
+
+.DS_Store
+.prettierignore
