@@ -32,7 +32,7 @@ main {
     width: 100%;
 }
 h2, #mmyy {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     font-weight: 600;
     letter-spacing: 1px;
@@ -66,7 +66,7 @@ height: 100%;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
         text-transform: capitalize;
 }
@@ -94,13 +94,13 @@ h3 {
     margin: 20px;
 }
 h4 {
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
 #information-wrapper > p {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400px;
     line-height: 22px;
 }
