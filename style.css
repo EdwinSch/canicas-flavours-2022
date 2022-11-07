@@ -71,10 +71,10 @@ h3 {
         text-transform: capitalize;
 }
 .product-description {
-    line-height: 22px;
+    line-height: 21px;
 }
 .product-description > p {
-    font-size: 14px;
+    font-size: 13px;
     text-transform: capitalize;
     font-weight: 600;
 }
