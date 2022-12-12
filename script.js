@@ -9,6 +9,7 @@ const assortment = [
         druiven: 'macabeu, parellada, xarel&dash;lo',
         rijping: '9&dash;10 maanden',
         prijs: '&euro; 15,95',
+        uitverkocht: false,
     },
     {
         title: 'berenguer ramon &dash; rosé',
@@ -18,6 +19,7 @@ const assortment = [
         druiven: 'macabeu, parellada, xarel&dash;lo',
         rijping: '9&dash;10 maanden',
         prijs: '&euro; 16,95',
+        uitverkocht: true,
     },
     {
         title: 'Llopart Brut',
@@ -27,6 +29,7 @@ const assortment = [
         druiven: 'macabeu, parellada, xarel&dash;lo',
         rijping: '18&dash;20 maanden',
         prijs: '&euro; 23,95',
+        uitverkocht: false,
     },
     {
         title: 'Llopart Brut &dash; rosé',
@@ -36,6 +39,7 @@ const assortment = [
         druiven: 'monastrell, garnatxa, pinot noir',
         rijping: '18&dash;20 maanden',
         prijs: '&euro; 23,95',
+        uitverkocht: false,
     },
     {
         title: 'Llopart Integral',
@@ -45,6 +49,7 @@ const assortment = [
         druiven: 'parellada, xarel&dash;lo, Chardonnay',
         rijping: '24 maanden',
         prijs: '&euro; 25,95',
+        uitverkocht: true,
     },
     {
         title: 'Llopart Microcosmos',
@@ -54,6 +59,7 @@ const assortment = [
         druiven: 'pinot noir, monastrell, fruit',
         rijping: '24 maanden',
         prijs: '&euro; 29,95',
+        uitverkocht: false,
     },
     {
         title: 'Llopart Ex Vite',
@@ -63,6 +69,7 @@ const assortment = [
         druiven: 'macabeu, xarel&dash;lo',
         rijping: '90 maanden',
         prijs: '&euro; 61,95',
+        uitverkocht: true,
     },
 ];
 const assortmentWrapper = document.getElementById('assortment-wrapper');
@@ -74,9 +81,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
    for (i=0; i< assortment.length; i++) {
     const createProductWrapper = document.createElement('article');
         createProductWrapper.classList.add("product-wrapper");
-                 createProductWrapper.innerHTML = 
-            `
-                <figure class="product-img">
+        //check for sold-out
+        if(assortment[i].uitverkocht) {
+            assortment[i].prijs = `uitverkocht! (${assortment[i].prijs})`
+                    // soldOut[i].classList.add('sold-out')
+        }
+        //create item HTML
+            createProductWrapper.innerHTML =                 
+            `<figure class="product-img">
                     <img src=${assortment[i].img} alt=${assortment[i].title}>
                 </figure>
                     <div class="product-description">
@@ -86,9 +98,13 @@ window.addEventListener('DOMContentLoaded', (event) => {
                         <p>druiven&colon; <span class="druiven">${assortment[i].druiven}</span></p>
                         <p>rijping&colon; <span class="rijping">${assortment[i].rijping}</span></p>
                         <p class="prijs">prijs per fles&colon; <span class="price-insert">${assortment[i].prijs}</span></p>
-                    </div>
-            `
+                    </div>`
+    
                 assortmentWrapper.appendChild(createProductWrapper);
+                if(assortment[i].uitverkocht) {
+                    const soldOut = document.querySelectorAll('.price-insert')
+                       soldOut[i].classList.add('sold-out')
+            }
     };
 });
 

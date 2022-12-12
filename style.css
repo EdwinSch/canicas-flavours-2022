@@ -87,6 +87,9 @@ h3 {
 .prijs {
     margin-top: 20px;
 }
+.sold-out {
+    color: red;
+}
 
 /* ---- INFORMATION ---- */
 #information-wrapper {
