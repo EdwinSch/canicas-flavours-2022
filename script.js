@@ -84,7 +84,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
         //check for sold-out
         if(assortment[i].uitverkocht) {
             assortment[i].prijs = `uitverkocht! (${assortment[i].prijs})`
-                    // soldOut[i].classList.add('sold-out')
         }
         //create item HTML
             createProductWrapper.innerHTML =                 
