@@ -29,7 +29,7 @@ const assortment = [
         druiven: 'macabeu, parellada, xarel&dash;lo',
         rijping: '18&dash;20 maanden',
         prijs: '&euro; 23,95',
-        uitverkocht: false,
+        uitverkocht: true,
     },
     {
         title: 'Llopart Brut &dash; rosé',
@@ -59,7 +59,7 @@ const assortment = [
         druiven: 'pinot noir, monastrell, fruit',
         rijping: '24 maanden',
         prijs: '&euro; 29,95',
-        uitverkocht: false,
+        uitverkocht: true,
     },
     {
         title: 'Llopart Ex Vite',
