@@ -9,7 +9,7 @@ const assortment = [
         druiven: 'macabeu, parellada, xarel&dash;lo',
         rijping: '9&dash;10 maanden',
         prijs: '&euro; 15,95',
-        uitverkocht: false,
+        uitverkocht: true,
     },
     {
         title: 'berenguer ramon &dash; rosé',
@@ -39,7 +39,7 @@ const assortment = [
         druiven: 'monastrell, garnatxa, pinot noir',
         rijping: '18&dash;20 maanden',
         prijs: '&euro; 23,95',
-        uitverkocht: false,
+        uitverkocht: true,
     },
     {
         title: 'Llopart Integral',
