@@ -2,6 +2,6 @@
 *.sketch
 *.fig
 
-.text-content.md
+text-content.md
 .DS_Store
 .prettierignore
